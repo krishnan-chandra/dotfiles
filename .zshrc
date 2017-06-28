@@ -92,3 +92,8 @@ fi
 if [ -f $HOME/.work_specific ]; then
     source $HOME/.work_specific
 fi
+
+alias cleanIdea='find . \( -name "*ipr" -name "*iws" -name "*iml" \) -delete'
+
+# Key bindings
+bindkey ^O forward-word
